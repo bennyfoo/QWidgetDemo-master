@@ -1,0 +1,2 @@
+^E:\GITHUB\QWIDGETDEMO-MASTER\BATTERY\DEBUG\MOC_PREDEFS.H.CBT
+cl -Bx"F:\Qt5.9.1\5.9.1\msvc2017_64\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W0 -E F:\Qt5.9.1\5.9.1\msvc2017_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h

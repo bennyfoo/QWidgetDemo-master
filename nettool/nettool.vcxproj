@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6D14DCF-1A1C-3583-89CA-56F1276B6973}</ProjectGuid>
+    <RootNamespace>nettool</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>temp\obj\</IntermediateDirectory>
+    <PrimaryOutput>nettool</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>temp\obj\</IntermediateDirectory>
+    <PrimaryOutput>nettool</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\obj\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">nettool</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\obj\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">nettool</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;api;form;..\core_qui;F:\QT5.9.1\5.9.1\MSVC2017_64\include;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWidgets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtGui;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtANGLE;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWebSockets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtNetwork;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtCore;temp\moc;temp\ui;F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>temp\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>temp\obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;websocket;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>F:\QT5.9.1\5.9.1\MSVC2017_64\lib\qtmain.lib;shell32.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Widgets.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Gui.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5WebSockets.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Network.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\QT5.9.1\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\nettool.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;websocket;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;api;form;..\core_qui;F:\QT5.9.1\5.9.1\MSVC2017_64\include;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWidgets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtGui;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtANGLE;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWebSockets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtNetwork;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtCore;temp\moc;temp\ui;F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>temp\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>temp\obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;websocket;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>F:\QT5.9.1\5.9.1\MSVC2017_64\lib\qtmaind.lib;shell32.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Widgetsd.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Guid.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5WebSocketsd.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Networkd.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\QT5.9.1\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\nettool.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;websocket;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBSOCKETS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="api\appconfig.cpp" />
+    <ClCompile Include="api\appdata.cpp" />
+    <ClCompile Include="..\core_qui\base64helper.cpp" />
+    <ClCompile Include="form\frmmain.cpp" />
+    <ClCompile Include="form\frmtcpclient.cpp" />
+    <ClCompile Include="form\frmtcpserver.cpp" />
+    <ClCompile Include="form\frmudpclient.cpp" />
+    <ClCompile Include="form\frmudpserver.cpp" />
+    <ClCompile Include="form\frmwebclient.cpp" />
+    <ClCompile Include="form\frmwebserver.cpp" />
+    <ClCompile Include="..\core_qui\iconhelper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\core_qui\quiconfig.cpp" />
+    <ClCompile Include="..\core_qui\quidateselect.cpp" />
+    <ClCompile Include="..\core_qui\quihelper.cpp" />
+    <ClCompile Include="..\core_qui\quiinputbox.cpp" />
+    <ClCompile Include="..\core_qui\quimessagebox.cpp" />
+    <ClCompile Include="..\core_qui\quistyle.cpp" />
+    <ClCompile Include="..\core_qui\quitipbox.cpp" />
+    <ClCompile Include="..\core_qui\quiwidget.cpp" />
+    <ClCompile Include="api\tcpclient.cpp" />
+    <ClCompile Include="api\tcpserver.cpp" />
+    <ClCompile Include="api\webclient.cpp" />
+    <ClCompile Include="api\webserver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="api\appconfig.h" />
+    <ClInclude Include="api\appdata.h" />
+    <ClInclude Include="..\core_qui\base64helper.h" />
+    <CustomBuild Include="form\frmmain.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmmain.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmmain.h -o temp\moc\moc_frmmain.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmmain.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmmain.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmmain.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmmain.h -o temp\moc\moc_frmmain.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmmain.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmmain.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmtcpclient.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmtcpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmtcpclient.h -o temp\moc\moc_frmtcpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmtcpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmtcpclient.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmtcpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmtcpclient.h -o temp\moc\moc_frmtcpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmtcpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmtcpclient.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmtcpserver.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmtcpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmtcpserver.h -o temp\moc\moc_frmtcpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmtcpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmtcpserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmtcpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmtcpserver.h -o temp\moc\moc_frmtcpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmtcpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmtcpserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmudpclient.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmudpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmudpclient.h -o temp\moc\moc_frmudpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmudpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmudpclient.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmudpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmudpclient.h -o temp\moc\moc_frmudpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmudpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmudpclient.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmudpserver.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmudpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmudpserver.h -o temp\moc\moc_frmudpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmudpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmudpserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmudpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmudpserver.h -o temp\moc\moc_frmudpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmudpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmudpserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmwebclient.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmwebclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmwebclient.h -o temp\moc\moc_frmwebclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmwebclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmwebclient.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmwebclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmwebclient.h -o temp\moc\moc_frmwebclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmwebclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmwebclient.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmwebserver.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmwebserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmwebserver.h -o temp\moc\moc_frmwebserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC form/frmwebserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_frmwebserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmwebserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; form\frmwebserver.h -o temp\moc\moc_frmwebserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC form/frmwebserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_frmwebserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="head.h" />
+    <CustomBuild Include="..\core_qui\iconhelper.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\iconhelper.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\iconhelper.h -o temp\moc\moc_iconhelper.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/iconhelper.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_iconhelper.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\iconhelper.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\iconhelper.h -o temp\moc\moc_iconhelper.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/iconhelper.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_iconhelper.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\core_qui\quiconfig.h" />
+    <CustomBuild Include="..\core_qui\quidateselect.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\quidateselect.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quidateselect.h -o temp\moc\moc_quidateselect.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/quidateselect.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_quidateselect.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\quidateselect.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quidateselect.h -o temp\moc\moc_quidateselect.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/quidateselect.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_quidateselect.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\core_qui\quihead.h" />
+    <ClInclude Include="..\core_qui\quihelper.h" />
+    <CustomBuild Include="..\core_qui\quiinputbox.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\quiinputbox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quiinputbox.h -o temp\moc\moc_quiinputbox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/quiinputbox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_quiinputbox.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\quiinputbox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quiinputbox.h -o temp\moc\moc_quiinputbox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/quiinputbox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_quiinputbox.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\core_qui\quimessagebox.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\quimessagebox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quimessagebox.h -o temp\moc\moc_quimessagebox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/quimessagebox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_quimessagebox.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\quimessagebox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quimessagebox.h -o temp\moc\moc_quimessagebox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/quimessagebox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_quimessagebox.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\core_qui\quistyle.h" />
+    <CustomBuild Include="..\core_qui\quitipbox.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\quitipbox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quitipbox.h -o temp\moc\moc_quitipbox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/quitipbox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_quitipbox.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\quitipbox.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quitipbox.h -o temp\moc\moc_quitipbox.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/quitipbox.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_quitipbox.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\core_qui\quiwidget.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\quiwidget.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quiwidget.h -o temp\moc\moc_quiwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../core_qui/quiwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_quiwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\quiwidget.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; ..\core_qui\quiwidget.h -o temp\moc\moc_quiwidget.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../core_qui/quiwidget.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_quiwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="api\tcpclient.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">api\tcpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\tcpclient.h -o temp\moc\moc_tcpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC api/tcpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_tcpclient.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">api\tcpclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\tcpclient.h -o temp\moc\moc_tcpclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC api/tcpclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_tcpclient.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="api\tcpserver.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">api\tcpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\tcpserver.h -o temp\moc\moc_tcpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC api/tcpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_tcpserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">api\tcpserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\tcpserver.h -o temp\moc\moc_tcpserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC api/tcpserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_tcpserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="api\webclient.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">api\webclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\webclient.h -o temp\moc\moc_webclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC api/webclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_webclient.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">api\webclient.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\webclient.h -o temp\moc\moc_webclient.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC api/webclient.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_webclient.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="api\webserver.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">api\webserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\webserver.h -o temp\moc\moc_webserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC api/webserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_webserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">api\webserver.h;temp\moc\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -Dwebsocket -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include temp/moc/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool -IE:/Github/QWidgetDemo-master/nettool/api -IE:/Github/QWidgetDemo-master/nettool/form -IE:/Github/QWidgetDemo-master/core_qui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWebSockets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtNetwork -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; api\webserver.h -o temp\moc\moc_webserver.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC api/webserver.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_webserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="temp\moc\moc_frmmain.cpp" />
+    <ClCompile Include="temp\moc\moc_frmtcpclient.cpp" />
+    <ClCompile Include="temp\moc\moc_frmtcpserver.cpp" />
+    <ClCompile Include="temp\moc\moc_frmudpclient.cpp" />
+    <ClCompile Include="temp\moc\moc_frmudpserver.cpp" />
+    <ClCompile Include="temp\moc\moc_frmwebclient.cpp" />
+    <ClCompile Include="temp\moc\moc_frmwebserver.cpp" />
+    <ClCompile Include="temp\moc\moc_iconhelper.cpp" />
+    <CustomBuild Include="temp\moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W0 -E F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2>NUL >temp\moc\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\moc\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W0 -E F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2>NUL >temp\moc\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="temp\moc\moc_quidateselect.cpp" />
+    <ClCompile Include="temp\moc\moc_quiinputbox.cpp" />
+    <ClCompile Include="temp\moc\moc_quimessagebox.cpp" />
+    <ClCompile Include="temp\moc\moc_quitipbox.cpp" />
+    <ClCompile Include="temp\moc\moc_quiwidget.cpp" />
+    <ClCompile Include="temp\moc\moc_tcpclient.cpp" />
+    <ClCompile Include="temp\moc\moc_tcpserver.cpp" />
+    <ClCompile Include="temp\moc\moc_webclient.cpp" />
+    <ClCompile Include="temp\moc\moc_webserver.cpp" />
+    <ClCompile Include="temp\rcc\qrc_main.cpp" />
+    <ClCompile Include="temp\rcc\qrc_qm.cpp" />
+    <ClCompile Include="temp\rcc\qrc_ttf.cpp" />
+    <ClInclude Include="temp\ui\ui_frmmain.h" />
+    <ClInclude Include="temp\ui\ui_frmtcpclient.h" />
+    <ClInclude Include="temp\ui\ui_frmtcpserver.h" />
+    <ClInclude Include="temp\ui\ui_frmudpclient.h" />
+    <ClInclude Include="temp\ui\ui_frmudpserver.h" />
+    <ClInclude Include="temp\ui\ui_frmwebclient.h" />
+    <ClInclude Include="temp\ui\ui_frmwebserver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="form\frmmain.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmmain.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmmain.ui -o temp\ui\ui_frmmain.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmmain.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmmain.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmmain.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmmain.ui -o temp\ui\ui_frmmain.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmmain.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmmain.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmtcpclient.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmtcpclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmtcpclient.ui -o temp\ui\ui_frmtcpclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmtcpclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmtcpclient.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmtcpclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmtcpclient.ui -o temp\ui\ui_frmtcpclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmtcpclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmtcpclient.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmtcpserver.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmtcpserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmtcpserver.ui -o temp\ui\ui_frmtcpserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmtcpserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmtcpserver.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmtcpserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmtcpserver.ui -o temp\ui\ui_frmtcpserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmtcpserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmtcpserver.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmudpclient.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmudpclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmudpclient.ui -o temp\ui\ui_frmudpclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmudpclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmudpclient.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmudpclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmudpclient.ui -o temp\ui\ui_frmudpclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmudpclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmudpclient.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmudpserver.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmudpserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmudpserver.ui -o temp\ui\ui_frmudpserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmudpserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmudpserver.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmudpserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmudpserver.ui -o temp\ui\ui_frmudpserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmudpserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmudpserver.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmwebclient.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmwebclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmwebclient.ui -o temp\ui\ui_frmwebclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmwebclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmwebclient.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmwebclient.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmwebclient.ui -o temp\ui\ui_frmwebclient.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmwebclient.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmwebclient.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="form\frmwebserver.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">form\frmwebserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmwebserver.ui -o temp\ui\ui_frmwebserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC form/frmwebserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\ui\ui_frmwebserver.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">form\frmwebserver.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe form\frmwebserver.ui -o temp\ui\ui_frmwebserver.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC form/frmwebserver.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\ui\ui_frmwebserver.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\core_qui\resource\image\fontawesome-webfont.ttf" />
+    <None Include="..\core_qui\resource\image\iconfont.ttf" />
+    <None Include="other\main.ico" />
+    <CustomBuild Include="other\main.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">other\main.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\main.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name main other\main.qrc -o temp\rcc\qrc_main.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC other/main.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\rcc\qrc_main.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">other\main.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\main.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name main other\main.qrc -o temp\rcc\qrc_main.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC other/main.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\rcc\qrc_main.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\core_qui\resource\qm.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\resource\qm.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;..\core_qui\resource\image\widgets.qm;..\core_qui\resource\image\qt_zh_CN.qm;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name qm ..\core_qui\resource\qm.qrc -o temp\rcc\qrc_qm.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC ../core_qui/resource/qm.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\rcc\qrc_qm.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\resource\qm.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;..\core_qui\resource\image\widgets.qm;..\core_qui\resource\image\qt_zh_CN.qm;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name qm ..\core_qui\resource\qm.qrc -o temp\rcc\qrc_qm.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC ../core_qui/resource/qm.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\rcc\qrc_qm.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\core_qui\resource\image\qt_zh_CN.qm" />
+    <CustomBuild Include="..\core_qui\resource\ttf.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\core_qui\resource\ttf.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;..\core_qui\resource\image\fontawesome-webfont.ttf;..\core_qui\resource\image\iconfont.ttf;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name ttf ..\core_qui\resource\ttf.qrc -o temp\rcc\qrc_ttf.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC ../core_qui/resource/ttf.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">temp\rcc\qrc_ttf.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\core_qui\resource\ttf.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;..\core_qui\resource\image\fontawesome-webfont.ttf;..\core_qui\resource\image\iconfont.ttf;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name ttf ..\core_qui\resource\ttf.qrc -o temp\rcc\qrc_ttf.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC ../core_qui/resource/ttf.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">temp\rcc\qrc_ttf.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\core_qui\resource\image\widgets.qm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="other\main.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

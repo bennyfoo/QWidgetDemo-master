@@ -1,0 +1,10 @@
+﻿  Generate moc_predefs.h
+  Uic'ing frmbattery.ui...
+  Moc'ing battery.h...
+  Moc'ing frmbattery.h...
+  battery.cpp
+  frmbattery.cpp
+  main.cpp
+  moc_battery.cpp
+  moc_frmbattery.cpp
+  battery.vcxproj -> E:\Github\QWidgetDemo-master\bin\battery.exe

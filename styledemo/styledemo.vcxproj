@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB85CB9E-6270-3944-B559-13CFD7247FDC}</ProjectGuid>
+    <RootNamespace>styledemo</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>styledemo</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>styledemo</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">styledemo</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\bin\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">styledemo</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;F:\QT5.9.1\5.9.1\MSVC2017_64\include;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWidgets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtGui;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtANGLE;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtCore;release;.;F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>F:\QT5.9.1\5.9.1\MSVC2017_64\lib\qtmain.lib;shell32.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Widgets.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Gui.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\QT5.9.1\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\styledemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;F:\QT5.9.1\5.9.1\MSVC2017_64\include;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtWidgets;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtGui;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtANGLE;F:\QT5.9.1\5.9.1\MSVC2017_64\include\QtCore;debug;.;F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>F:\QT5.9.1\5.9.1\MSVC2017_64\lib\qtmaind.lib;shell32.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Widgetsd.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Guid.lib;F:\QT5.9.1\5.9.1\MSVC2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\QT5.9.1\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\styledemo.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="frmmain.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="frmmain.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">frmmain.h;release\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/styledemo -IE:/Github/QWidgetDemo-master/styledemo -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; frmmain.h -o release\moc_frmmain.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC frmmain.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_frmmain.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">frmmain.h;debug\moc_predefs.h;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IF:/QT5.9.1/5.9.1/MSVC2017_64/mkspecs/win32-msvc -IE:/Github/QWidgetDemo-master/styledemo -IE:/Github/QWidgetDemo-master/styledemo -IF:/QT5.9.1/5.9.1/MSVC2017_64/include -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtWidgets -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtGui -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtANGLE -IF:/QT5.9.1/5.9.1/MSVC2017_64/include/QtCore -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\INCLUDE&quot; -I&quot;F:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\ATLMFC\INCLUDE&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt&quot; frmmain.h -o debug\moc_frmmain.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC frmmain.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_frmmain.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="head.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_frmmain.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_frmmain.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -Bx&quot;$(QTDIR)\bin\qmake.exe&quot; -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E F:\QT5.9.1\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_main.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_main.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_qss.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_qss.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_frmmain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="frmmain.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">frmmain.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe frmmain.ui -o ui_frmmain.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC frmmain.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_frmmain.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">frmmain.ui;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\uic.exe frmmain.ui -o ui_frmmain.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC frmmain.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_frmmain.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="other\qss\flatwhite\add_bottom.png" />
+    <None Include="other\qss\lightblue\add_bottom.png" />
+    <None Include="other\qss\psblack\add_bottom.png" />
+    <None Include="other\qss\flatwhite\add_left.png" />
+    <None Include="other\qss\lightblue\add_left.png" />
+    <None Include="other\qss\psblack\add_left.png" />
+    <None Include="other\qss\flatwhite\add_right.png" />
+    <None Include="other\qss\lightblue\add_right.png" />
+    <None Include="other\qss\psblack\add_right.png" />
+    <None Include="other\qss\flatwhite\add_top.png" />
+    <None Include="other\qss\lightblue\add_top.png" />
+    <None Include="other\qss\psblack\add_top.png" />
+    <None Include="other\qss\flatwhite\branch_close.png" />
+    <None Include="other\qss\lightblue\branch_close.png" />
+    <None Include="other\qss\psblack\branch_close.png" />
+    <None Include="other\qss\flatwhite\branch_open.png" />
+    <None Include="other\qss\lightblue\branch_open.png" />
+    <None Include="other\qss\psblack\branch_open.png" />
+    <None Include="other\image\btn_close.png" />
+    <None Include="other\image\btn_ok.png" />
+    <None Include="other\qss\flatwhite\calendar_nextmonth.png" />
+    <None Include="other\qss\lightblue\calendar_nextmonth.png" />
+    <None Include="other\qss\psblack\calendar_nextmonth.png" />
+    <None Include="other\qss\flatwhite\calendar_prevmonth.png" />
+    <None Include="other\qss\lightblue\calendar_prevmonth.png" />
+    <None Include="other\qss\psblack\calendar_prevmonth.png" />
+    <None Include="other\qss\flatwhite\checkbox_checked.png" />
+    <None Include="other\qss\lightblue\checkbox_checked.png" />
+    <None Include="other\qss\psblack\checkbox_checked.png" />
+    <None Include="other\qss\flatwhite\checkbox_checked_disable.png" />
+    <None Include="other\qss\lightblue\checkbox_checked_disable.png" />
+    <None Include="other\qss\psblack\checkbox_checked_disable.png" />
+    <None Include="other\qss\flatwhite\checkbox_parcial.png" />
+    <None Include="other\qss\lightblue\checkbox_parcial.png" />
+    <None Include="other\qss\psblack\checkbox_parcial.png" />
+    <None Include="other\qss\flatwhite\checkbox_parcial_disable.png" />
+    <None Include="other\qss\lightblue\checkbox_parcial_disable.png" />
+    <None Include="other\qss\psblack\checkbox_parcial_disable.png" />
+    <None Include="other\qss\flatwhite\checkbox_unchecked.png" />
+    <None Include="other\qss\lightblue\checkbox_unchecked.png" />
+    <None Include="other\qss\psblack\checkbox_unchecked.png" />
+    <None Include="other\qss\flatwhite\checkbox_unchecked_disable.png" />
+    <None Include="other\qss\lightblue\checkbox_unchecked_disable.png" />
+    <None Include="other\qss\psblack\checkbox_unchecked_disable.png" />
+    <None Include="other\qss\flatwhite.css" />
+    <None Include="other\image\fontawesome-webfont.ttf" />
+    <None Include="other\qss\lightblue.css" />
+    <CustomBuild Include="other\main.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">other\main.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\image\msg_question.png;other\image\widgets.qm;other\image\btn_close.png;other\image\qt_zh_CN.qm;other\image\btn_ok.png;other\image\msg_error.png;other\image\fontawesome-webfont.ttf;other\image\msg_info.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name main other\main.qrc -o release\qrc_main.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC other/main.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_main.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">other\main.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\image\msg_question.png;other\image\widgets.qm;other\image\btn_close.png;other\image\qt_zh_CN.qm;other\image\btn_ok.png;other\image\msg_error.png;other\image\fontawesome-webfont.ttf;other\image\msg_info.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name main other\main.qrc -o debug\qrc_main.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC other/main.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_main.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="other\image\msg_error.png" />
+    <None Include="other\image\msg_info.png" />
+    <None Include="other\image\msg_question.png" />
+    <None Include="other\qss\psblack.css" />
+    <CustomBuild Include="other\qss.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">other\qss.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\qss\lightblue.css;other\qss\psblack.css;other\qss\flatwhite.css;other\qss\psblack\checkbox_checked_disable.png;other\qss\psblack\checkbox_checked.png;other\qss\psblack\add_left.png;other\qss\psblack\add_right.png;other\qss\psblack\checkbox_unchecked_disable.png;other\qss\psblack\radiobutton_checked_disable.png;other\qss\psblack\checkbox_unchecked.png;other\qss\psblack\add_top.png;other\qss\psblack\calendar_prevmonth.png;other\qss\psblack\checkbox_parcial.png;other\qss\psblack\radiobutton_unchecked_disable.png;other\qss\psblack\branch_open.png;other\qss\psblack\calendar_nextmonth.png;other\qss\psblack\add_bottom.png;other\qss\psblack\radiobutton_checked.png;other\qss\psblack\branch_close.png;other\qss\psblack\checkbox_parcial_disable.png;other\qss\psblack\radiobutton_unchecked.png;other\qss\lightblue\checkbox_checked_disable.png;other\qss\lightblue\checkbox_checked.png;other\qss\lightblue\add_left.png;other\qss\lightblue\add_right.png;other\qss\lightblue\checkbox_unchecked_disable.png;other\qss\lightblue\radiobutton_checked_disable.png;other\qss\lightblue\checkbox_unchecked.png;other\qss\lightblue\add_top.png;other\qss\lightblue\calendar_prevmonth.png;other\qss\lightblue\checkbox_parcial.png;other\qss\lightblue\radiobutton_unchecked_disable.png;other\qss\lightblue\branch_open.png;other\qss\lightblue\calendar_nextmonth.png;other\qss\lightblue\add_bottom.png;other\qss\lightblue\radiobutton_checked.png;other\qss\lightblue\branch_close.png;other\qss\lightblue\checkbox_parcial_disable.png;other\qss\lightblue\radiobutton_unchecked.png;other\qss\flatwhite\checkbox_checked_disable.png;other\qss\flatwhite\checkbox_checked.png;other\qss\flatwhite\add_left.png;other\qss\flatwhite\add_right.png;other\qss\flatwhite\checkbox_unchecked_disable.png;other\qss\flatwhite\radiobutton_checked_disable.png;other\qss\flatwhite\checkbox_unchecked.png;other\qss\flatwhite\add_top.png;other\qss\flatwhite\calendar_prevmonth.png;other\qss\flatwhite\checkbox_parcial.png;other\qss\flatwhite\radiobutton_unchecked_disable.png;other\qss\flatwhite\branch_open.png;other\qss\flatwhite\calendar_nextmonth.png;other\qss\flatwhite\add_bottom.png;other\qss\flatwhite\radiobutton_checked.png;other\qss\flatwhite\branch_close.png;other\qss\flatwhite\checkbox_parcial_disable.png;other\qss\flatwhite\radiobutton_unchecked.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name qss other\qss.qrc -o release\qrc_qss.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC other/qss.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_qss.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">other\qss.qrc;F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe;other\qss\lightblue.css;other\qss\psblack.css;other\qss\flatwhite.css;other\qss\psblack\checkbox_checked_disable.png;other\qss\psblack\checkbox_checked.png;other\qss\psblack\add_left.png;other\qss\psblack\add_right.png;other\qss\psblack\checkbox_unchecked_disable.png;other\qss\psblack\radiobutton_checked_disable.png;other\qss\psblack\checkbox_unchecked.png;other\qss\psblack\add_top.png;other\qss\psblack\calendar_prevmonth.png;other\qss\psblack\checkbox_parcial.png;other\qss\psblack\radiobutton_unchecked_disable.png;other\qss\psblack\branch_open.png;other\qss\psblack\calendar_nextmonth.png;other\qss\psblack\add_bottom.png;other\qss\psblack\radiobutton_checked.png;other\qss\psblack\branch_close.png;other\qss\psblack\checkbox_parcial_disable.png;other\qss\psblack\radiobutton_unchecked.png;other\qss\lightblue\checkbox_checked_disable.png;other\qss\lightblue\checkbox_checked.png;other\qss\lightblue\add_left.png;other\qss\lightblue\add_right.png;other\qss\lightblue\checkbox_unchecked_disable.png;other\qss\lightblue\radiobutton_checked_disable.png;other\qss\lightblue\checkbox_unchecked.png;other\qss\lightblue\add_top.png;other\qss\lightblue\calendar_prevmonth.png;other\qss\lightblue\checkbox_parcial.png;other\qss\lightblue\radiobutton_unchecked_disable.png;other\qss\lightblue\branch_open.png;other\qss\lightblue\calendar_nextmonth.png;other\qss\lightblue\add_bottom.png;other\qss\lightblue\radiobutton_checked.png;other\qss\lightblue\branch_close.png;other\qss\lightblue\checkbox_parcial_disable.png;other\qss\lightblue\radiobutton_unchecked.png;other\qss\flatwhite\checkbox_checked_disable.png;other\qss\flatwhite\checkbox_checked.png;other\qss\flatwhite\add_left.png;other\qss\flatwhite\add_right.png;other\qss\flatwhite\checkbox_unchecked_disable.png;other\qss\flatwhite\radiobutton_checked_disable.png;other\qss\flatwhite\checkbox_unchecked.png;other\qss\flatwhite\add_top.png;other\qss\flatwhite\calendar_prevmonth.png;other\qss\flatwhite\checkbox_parcial.png;other\qss\flatwhite\radiobutton_unchecked_disable.png;other\qss\flatwhite\branch_open.png;other\qss\flatwhite\calendar_nextmonth.png;other\qss\flatwhite\add_bottom.png;other\qss\flatwhite\radiobutton_checked.png;other\qss\flatwhite\branch_close.png;other\qss\flatwhite\checkbox_parcial_disable.png;other\qss\flatwhite\radiobutton_unchecked.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">F:\QT5.9.1\5.9.1\MSVC2017_64\bin\rcc.exe -name qss other\qss.qrc -o debug\qrc_qss.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC other/qss.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_qss.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="other\image\qt_zh_CN.qm" />
+    <None Include="other\qss\flatwhite\radiobutton_checked.png" />
+    <None Include="other\qss\lightblue\radiobutton_checked.png" />
+    <None Include="other\qss\psblack\radiobutton_checked.png" />
+    <None Include="other\qss\flatwhite\radiobutton_checked_disable.png" />
+    <None Include="other\qss\lightblue\radiobutton_checked_disable.png" />
+    <None Include="other\qss\psblack\radiobutton_checked_disable.png" />
+    <None Include="other\qss\flatwhite\radiobutton_unchecked.png" />
+    <None Include="other\qss\lightblue\radiobutton_unchecked.png" />
+    <None Include="other\qss\psblack\radiobutton_unchecked.png" />
+    <None Include="other\qss\flatwhite\radiobutton_unchecked_disable.png" />
+    <None Include="other\qss\lightblue\radiobutton_unchecked_disable.png" />
+    <None Include="other\qss\psblack\radiobutton_unchecked_disable.png" />
+    <None Include="other\image\widgets.qm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
